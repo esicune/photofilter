@@ -1,0 +1,67 @@
+:root {
+    --base: #ffc600;
+    --spacing: 10px;
+    --blur: 10px;
+    --brightness: 1;
+    --contrast: 1;
+    --opacity: 1;
+    --sepia: 0;
+    --grayscale: 0;
+    --huerotate: 0;
+    --saturate: 1;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+  filter: brightness(var(--brightness));
+  filter: contrast(var(--contrast));
+  filter: opacity(var(--opacity));
+  filter: sepia(var(--sepia));
+  filter: grayscale(var(--grayscale));
+  filter: hue-rotate(var(--huerotate));
+  filter: saturate(var(--saturate));
+}
+
+.img-div {
+width: 70vw;
+}
+
+.hl {
+  color: var(--base);
+}
+
+/*
+misc styles, nothing to do with CSS variables
+*/
+
+body {
+text-align: center;
+background: #193549;
+color: white;
+font-family: 'helvetica neue', sans-serif;
+font-weight: 100;
+font-size: 20px;
+}
+
+main {
+display: flex;
+}
+
+.controls {
+display: grid; 
+grid-template-columns: 1fr 1fr; 
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+gap: 10px 10px;
+justify-content: center; 
+align-content: center; 
+justify-items: center; 
+align-items: center;
+/* margin-bottom: 50px; */
+width: 30vw;
+}
+
+input {
+width: 100px;
+}
