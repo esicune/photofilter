@@ -7,29 +7,20 @@
     --opacity: 1;
     --sepia: 0;
     --grayscale: 0;
-    --huerotate: 0;
     --saturate: 1;
+    --huerotate: 0;
 }
 
 img {
-  padding: var(--spacing);
-  background: var(--base);
-  filter: blur(var(--blur));
-  filter: brightness(var(--brightness));
-  filter: contrast(var(--contrast));
-  filter: opacity(var(--opacity));
-  filter: sepia(var(--sepia));
-  filter: grayscale(var(--grayscale));
-  filter: hue-rotate(var(--huerotate));
-  filter: saturate(var(--saturate));
-}
-
-.img-div {
-width: 70vw;
+    display: block;
+    width: 70vw;
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur)) brightness(var(--brightness)) contrast(var(--contrast)) opacity(var(--opacity)) sepia(var(--sepia)) grayscale(var(--grayscale)) hue-rotate(var(--huerotate)) saturate(var(--saturate));
 }
 
 .hl {
-  color: var(--base);
+    color: var(--base);
 }
 
 /*
@@ -37,31 +28,31 @@ misc styles, nothing to do with CSS variables
 */
 
 body {
-text-align: center;
-background: #193549;
-color: white;
-font-family: 'helvetica neue', sans-serif;
-font-weight: 100;
-font-size: 20px;
+    text-align: center;
+    background: #193549;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
 }
 
 main {
-display: flex;
+    display: flex;
 }
 
 .controls {
-display: grid; 
-grid-template-columns: 1fr 1fr; 
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-gap: 10px 10px;
-justify-content: center; 
-align-content: center; 
-justify-items: center; 
-align-items: center;
-/* margin-bottom: 50px; */
-width: 30vw;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    justify-content: center; 
+    align-content: center; 
+    justify-items: center; 
+    align-items: center;
+    /* margin-bottom: 50px; */
+    width: 30vw;
 }
 
 input {
-width: 100px;
+    width: 100px;
 }
